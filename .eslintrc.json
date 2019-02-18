@@ -6,15 +6,14 @@
     "extends": [
         "airbnb-base",
         "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended",
-        "plugin:prettier/@typescript-eslint"
+        "plugin:prettier/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
+    "plugins": ["@typescript-eslint", "import"],
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
