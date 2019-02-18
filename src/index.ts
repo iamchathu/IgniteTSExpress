@@ -1,10 +1,11 @@
 import express, { Response, Request } from 'express';
-
 import bodyParser from 'body-parser';
 
+import config from './config';
+
 const app: express.Application = express();
-// app.set('port', config.app.port);
-// app.set('ip', config.app.ip);
+app.set('port', config.app.port);
+app.set('ip', config.app.ip);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
