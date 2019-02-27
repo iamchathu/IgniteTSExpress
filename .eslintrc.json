@@ -1,46 +1,47 @@
 {
-  "env": {
-    "es6": true,
-    "node": true,
-    "mocha": true
-  },
-  "extends": [
-    "airbnb-base",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier", "import"],
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "rules": {
-    "no-console": "off"
-  },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+    "env": {
+        "es6": true,
+        "node": true,
+        "mocha": true
     },
-    "import/resolver": {
-      "typescript": {}
-    }
-  },
-  "overrides": [
-    {
-      "files": ["src/**/*.spec.ts"],
-      "rules": {
-        "import/no-extraneous-dependencies": [
-          "error",
-          {
-            "devDependencies": true
-          }
-        ]
-      }
-    }
-  ]
+    "extends": [
+        "airbnb-base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier", "import"],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": "off"
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
+    "overrides": [
+        {
+            "files": ["src/**/*.spec.ts"],
+            "rules": {
+                "import/no-extraneous-dependencies": [
+                    "error",
+                    {
+                        "devDependencies": true
+                    }
+                ],
+                "no-unused-expressions": 0
+            }
+        }
+    ]
 }
