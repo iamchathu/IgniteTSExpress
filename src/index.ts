@@ -10,11 +10,11 @@ app.set('ip', config.app.ip);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response): void => {
     res.send('API Server!');
 });
 
-const server = app.listen(app.get('port'), () => {
+const server = app.listen(app.get('port'), (): void => {
     console.log(`listening on *:${app.get('port')}`);
 });
 
