@@ -10,12 +10,12 @@
     "scripts": {
         "prebuild": "eslint src --ext .ts",
         "build": "tsc",
-        "postinstall": "yarn run build",
         "start": "node dist/index.js",
         "dev": "nodemon",
         "lint": "eslint src --ext .ts",
         "test":"jest --passWithNoTests"
     },
+    "heroku-run-build-script": true,
     "devDependencies": {
         "@types/body-parser": "^1.17.1",
         "@types/express": "^4.17.1",
