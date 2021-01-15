@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const config = {
     app: {
         port: process.env.SERVER_PORT || process.env.PORT || 3089,
