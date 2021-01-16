@@ -21,7 +21,7 @@ app.get('/', (req: Request, res: Response): void => {
 });
 
 const server = app.listen(app.get('port'), (): void => {
-    console.log(`🚀 Listening on *:${app.get('port')}`);
+    console.log(`🚀 Listening on *:${app.get('port') as string | number}`);
 });
 
 export default server;
