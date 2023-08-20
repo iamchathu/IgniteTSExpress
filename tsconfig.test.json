@@ -3,5 +3,6 @@
     "compilerOptions": {
         "noEmit": true
     },
-    "exclude": ["node_modules"]
+    "include": ["src", "jest.*.ts"],
+    "exclude": ["**/node_modules", "**/.*/", "dist"]
 }

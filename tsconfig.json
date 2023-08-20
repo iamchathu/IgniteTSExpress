@@ -4,9 +4,10 @@
     "compilerOptions": {
         "noEmit": true
     },
-    "exclude": ["node_modules", "dist"],
     "ts-node": {
         "esm": true,
         "swc": true
-    }
+    },
+    "include": ["src", "jest.*.ts"],
+    "exclude": ["**/node_modules", "**/.*/", "dist"]
 }
