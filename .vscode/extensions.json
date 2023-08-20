@@ -8,6 +8,8 @@
         "vscode-icons-team.vscode-icons",
         "streetsidesoftware.code-spell-checker",
         "redhat.vscode-yaml",
-        "stkb.rewrap"
+        "stkb.rewrap",
+        "liamhammett.inline-parameters",
+        "yoavbls.pretty-ts-errors"
     ]
 }
