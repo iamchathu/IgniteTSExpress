@@ -1,0 +1,15 @@
+{
+    // cspell: words dbaeumer mikestead kohler esbenp
+    "recommendations": [
+        "mikestead.dotenv",
+        "dbaeumer.vscode-eslint",
+        "christian-kohler.npm-intellisense",
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "streetsidesoftware.code-spell-checker",
+        "redhat.vscode-yaml",
+        "stkb.rewrap",
+        "liamhammett.inline-parameters",
+        "yoavbls.pretty-ts-errors"
+    ]
+}
